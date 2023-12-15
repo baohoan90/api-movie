@@ -5,9 +5,9 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5432/moviedb_1
-    username: postgres
-    password: postgres
+    url: ${API_URL}
+    username: ${API_USER}
+    password: ${API_PASSWORD}
   security:
     oauth2:
       client:
